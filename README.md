@@ -3,7 +3,7 @@
 This repository is the official implementation of paper Learning Multi-Objective Curricula for Robotic Policy Learning 
 
 
-![Architecture](./imgs/multi_objective.pdf)
+![Architecture](./imgs/multi_objective.png)
 
 ## Requirements
 
