@@ -57,12 +57,6 @@ To train with model without reward shaping, run:
 python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --shaping 0
 ```
 
-To train PPO, run:
-
-```train
-python train_ppo.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda>
-```
-
 **Training parameters**
 
 | Parameters        | Meaning           |
