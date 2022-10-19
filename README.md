@@ -10,7 +10,7 @@ This repository is the official implementation of paper Learning Multi-Objective
 To install requirements:
 
 ```setup
-pip install -r src/requirements.txt
+pip install -r requirements.txt
 ```
 
 To install depdencies, we recommend to use a conda virtual environment.
@@ -24,37 +24,7 @@ conda create --name moc python=3.7
 To train the model(s) in the paper, run this command:
 
 ```train
-cd src
 python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda>
-```
-**Note:** To train an ablation experiment, just turn off the component in the training arguments.
-
-To train with model without hyper-LSTM, run:
-
-```train
-python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --meta 0
-```
-To train with model with memory only, run:
-
-```train
-python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --memory-only 1
-```
-To train with model with goal curriculum only, run:
-
-```train
-python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --goal-curriculum 1
-```
-
-To train with model with initial curriculum only, run:
-
-```train
-python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --initial-curriculum 1
-```
-
-To train with model without reward shaping, run:
-
-```train
-python train_causal_world.py --task-name <task name> --total-times 10000000 --num-of-envs 5 --device <cpu/cuda> --shaping 0
 ```
 
 **Training parameters**
@@ -74,22 +44,6 @@ Causalworld tasks options:
 4. stacking2
 5. reaching
 
-## Evaluation
-
-To evaluate my model using the pre-trained model, run:
-
-```eval
-cd src
-python train_causal_world.py --load-dir <model dir> --task-name <task-name>
-```
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [Pre-trained models](https://drive.google.com/drive/folders/1gQHrabDSze2nhY5gRDkFc9p6HSJYGxTZ?usp=sharing) trained on CausalWorld with parameters showed in Appendix. 
-
-**Note**: the pretrained model for MOC DRL in all tasks is included in folder src/models.
 
 ## Results
 
