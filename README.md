@@ -6,7 +6,6 @@ This repository is the official implementation of paper [Learning Multi-Objectiv
 ![Architecture](./imgs/multi_objective.png)
 
 ## Requirements
----
 
 To install requirements:
 
@@ -21,7 +20,6 @@ conda create --name moc python=3.7
 ```
 
 ## Training
----
 
 To train the model(s) in the paper, run this command:
 
@@ -48,7 +46,6 @@ Causalworld tasks options:
 
 
 ## Results
----
 
 Our model achieves the following performance on CausalWorld:
 
@@ -65,7 +62,6 @@ Our model achieves the following performance on CausalWorld:
 The column shows the mean episode rewards plus-minus standard deviation at final stage.
 
 ## Cite
----
 ```
 @article{corl:jikun22,
   author    = {Jikun Kang and
@@ -82,7 +78,6 @@ The column shows the mean episode rewards plus-minus standard deviation at final
 ```
 
 ## Contributing
----
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
