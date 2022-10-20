@@ -1,11 +1,12 @@
 # Learning Multi-Objective Curricula for Robotic Policy Learning
 
-This repository is the official implementation of paper Learning Multi-Objective Curricula for Robotic Policy Learning 
+This repository is the official implementation of paper [Learning Multi-Objective Curricula for Robotic Policy Learning](https://arxiv.org/abs/2110.03032)
 
 
 ![Architecture](./imgs/multi_objective.png)
 
 ## Requirements
+---
 
 To install requirements:
 
@@ -20,6 +21,7 @@ conda create --name moc python=3.7
 ```
 
 ## Training
+---
 
 To train the model(s) in the paper, run this command:
 
@@ -46,6 +48,7 @@ Causalworld tasks options:
 
 
 ## Results
+---
 
 Our model achieves the following performance on CausalWorld:
 
@@ -61,7 +64,25 @@ Our model achieves the following performance on CausalWorld:
 
 The column shows the mean episode rewards plus-minus standard deviation at final stage.
 
+## Cite
+---
+```
+@article{corl:jikun22,
+  author    = {Jikun Kang and
+               Miao Liu and
+               Abhinav Gupta and
+               Chris Pal and
+               Xue Liu and
+               Jie Fu},
+  title     = {Learning Multi-Objective Curricula for Robotic Policy Learning},
+  journal   = {CoRL},
+  volume    = {abs/2110.03032},
+  year      = {2022}
+}
+```
+
 ## Contributing
+---
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
